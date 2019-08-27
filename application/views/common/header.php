@@ -54,7 +54,7 @@
 		<ul class="navbar-nav ml-auto">
 			<?php if(!$this->ion_auth->logged_in()) { ?>
 			<li class="nav-item"><a class="nav-link" href="<?=base_url('user/login')?>">Login</a></li>
-			<li class="nav-item"><a class="nav-link" href="<?=base_url('user/signup')?>">Register</a></li>
+			<!--<li class="nav-item"><a class="nav-link" href="<?=base_url('user/signup')?>">Register</a></li>-->
 			<?php } else { ?>
 			<li class="nav-item dropdown p-0">
 				<a class="nav-link dropdown-toggle px-1 py-0" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -88,3 +88,11 @@
 				<?=$notices?>
 			</div>
 			<?php } ?>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div id="update-notice" class="alert alert-warning py-1" role="alert">
+						<strong>Notice of Site Closure</strong> : As of 2019/07/02, trackr.moe has shut its doors. More info can be found <a href='https://blog.codeanimu.net/posts/2019/07/trackr-moe-the-future/'>here</a>.
+					</div>
+				</div>
+			</div>
